@@ -1,7 +1,9 @@
 package com.demo.project.mapper;
 
-import com.demo.project.persistence.entity.*;
-import com.demo.project.model.*;
+import com.demo.project.model.Checkpoint;
+import com.demo.project.model.ProjectInfo;
+import com.demo.project.persistence.entity.CheckpointEntity;
+import com.demo.project.persistence.entity.ProjectEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.NullValuePropertyMappingStrategy;

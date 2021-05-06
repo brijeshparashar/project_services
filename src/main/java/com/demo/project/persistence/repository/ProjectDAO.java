@@ -6,5 +6,6 @@ import java.util.Optional;
 
 public interface ProjectDAO {
     Optional<ProjectEntity> getProjectInfo(Long projectId);
+
     ProjectEntity updateProject(ProjectEntity projectEntity);
 }

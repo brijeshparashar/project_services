@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- *  Error response object returned by APIs in case of any exception.
+ * Error response object returned by APIs in case of any exception.
  */
 @Data
 @Builder

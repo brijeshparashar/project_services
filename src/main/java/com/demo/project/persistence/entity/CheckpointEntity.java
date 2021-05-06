@@ -11,7 +11,7 @@ import java.util.List;
  * POJO for Task.
  */
 @Entity
-@Table(name= "Checkpoint")
+@Table(name = "Checkpoint")
 @Getter
 @Setter
 @Builder
@@ -27,9 +27,9 @@ public class CheckpointEntity {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name= "projectId", nullable = false)
+    @JoinColumn(name = "projectId", nullable = false)
     private ProjectEntity project;
 
-    @OneToMany(cascade= CascadeType.ALL, fetch = FetchType.LAZY,mappedBy = "checkpoint")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "checkpoint")
     private List<TaskEntity> tasks = new ArrayList<>();
 }

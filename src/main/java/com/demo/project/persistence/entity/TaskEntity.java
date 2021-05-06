@@ -9,7 +9,7 @@ import javax.persistence.*;
  * POJO for Task.
  */
 @Entity
-@Table(name= "Task")
+@Table(name = "Task")
 @Getter
 @Setter
 @Builder
@@ -19,12 +19,12 @@ import javax.persistence.*;
 public class TaskEntity {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long taskId;
     private String taskDescription;
     private boolean taskCompleted;
     @ManyToOne
-    @JoinColumn(name= "checkpointId", nullable = false)
+    @JoinColumn(name = "checkpointId", nullable = false)
     private CheckpointEntity checkpoint;
 
 }

@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  * Repository class to perform Crud operations on ProjectDetails table.
  */
 @Repository
-public interface ProjectRepository extends CrudRepository<ProjectEntity,Long>{
+public interface ProjectRepository extends CrudRepository<ProjectEntity, Long> {
 }
